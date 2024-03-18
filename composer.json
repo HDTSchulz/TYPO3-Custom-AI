@@ -1,0 +1,33 @@
+{
+  "name": "minzink/typo3_custom_ai",
+  "description": "TYPO3 Extension to handle Rubix ML lib",
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "Timo Schulz"
+    }
+  ],
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "rubix/ml": "^2.0",
+    "typo3/cms-core": "^12.4",
+    "typo3/cms-extbase": "^12.4"
+  },
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "minzink\\typo3_custom_ai\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "typo3_custom_ai"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  }
+}
